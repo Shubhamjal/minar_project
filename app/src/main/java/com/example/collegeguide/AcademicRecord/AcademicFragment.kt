@@ -1,11 +1,14 @@
 package com.example.collegeguide.AcademicRecord
 
+import android.app.ActionBar.LayoutParams
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.collegeguide.R
 import com.example.collegeguide.databinding.FragmentAcademicBinding
@@ -22,6 +25,8 @@ private const val ARG_PARAM2 = "param2"
  */
 class AcademicFragment : Fragment() {
 
+    lateinit var dialog1 : Dialog
+    lateinit var dialog2 : Dialog
     lateinit var binding: FragmentAcademicBinding
     var academicList= arrayListOf<AcademicEntity>()
     lateinit var academicDatabase: AcademicDatabase
@@ -49,27 +54,36 @@ class AcademicFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         academicDatabase= AcademicDatabase.getInstance(requireContext())
-
+        dialog1 = Dialog(requireContext(),android.R.style.ThemeOverlay_Material_Light)
+        dialog1.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog2 = Dialog(requireContext(),android.R.style.ThemeOverlay_Material_Light)
+        dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE)
 
         binding.btnSemester1Details.setOnClickListener {
-            val dialog = Dialog(requireContext())
-            dialog.setContentView(R.layout.sem1_academic_record)
+            dialog1.setContentView(R.layout.sem1_academic_record)
+            dialog1.show()
+            dialog1.apply {
 
-            //to fit dialogbox correctly
-            val window = dialog.window
-            val layoutParams = window?.attributes
-            layoutParams?.width = ViewGroup.LayoutParams.MATCH_PARENT
-            layoutParams?.height = ViewGroup.LayoutParams.WRAP_CONTENT
-            window?.attributes = layoutParams
+                val card = findViewById<CardView>(R.id.cardsem1pa1)
 
-            dialog.show()
+                card.setOnClickListener{
+                    OpenDetails()
+                }
+            }
         }
+
+
     }
 
+    private fun OpenDetails() {
+        dialog2.setContentView(R.layout.sem1_pa1_dialogue)
+        dialog2.show()
+        dialog2.apply {
 
 
 
-
+        }
+    }
 
 
     companion object {
