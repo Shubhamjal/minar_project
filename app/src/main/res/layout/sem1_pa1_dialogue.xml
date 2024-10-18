@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_sem1_pa1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Periodic Assessment 1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <!-- Subject Rows as EditText -->
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/subject_maths_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="Maths" />
+
+                    <EditText
+                        android:id="@+id/marks_maths_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:hint="24/40" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/subject_physics_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="Physics" />
+
+                    <EditText
+                        android:id="@+id/marks_physics_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:hint="20/40" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/subject_english_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="English" />
+
+                    <EditText
+                        android:id="@+id/marks_english_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:hint="25/40" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/subject_chemistry_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="Chemistry" />
+
+                    <EditText
+                        android:id="@+id/marks_chemistry_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:hint="16/40" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/subject_drawing_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="Drawing" />
+
+                    <EditText
+                        android:id="@+id/marks_drawing_pa1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:hint="38/50" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/button_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

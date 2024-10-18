@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.Home -> navController.navigate(R.id.dashboardFragment)
                 R.id.TodoList -> navController.navigate(R.id.todoFragment)
+                R.id.Academics -> navController.navigate(R.id.academicRecordFragment)
+                R.id.Study_Material -> navController.navigate(R.id.studyMaterialFragment)
 
             }
             return@setOnItemSelectedListener true

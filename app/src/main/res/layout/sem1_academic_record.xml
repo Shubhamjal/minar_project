@@ -1,0 +1,535 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Header for Semester 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester 1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Periodic Assessment 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_sem1_pa1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Periodic Assessment 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <!-- Subject Rows -->
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_maths_pa1"
+                            android:text="Maths"/>
+                        <TextView
+                            android:id="@+id/marks_maths_pa1"
+                            android:gravity="end"
+                            android:text="24/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_physics_pa1"
+                            android:text="Physics"/>
+                        <TextView
+                            android:id="@+id/marks_physics_pa1"
+                            android:gravity="end"
+                            android:text="20/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_english_pa1"
+                            android:text="English"/>
+                        <TextView
+                            android:id="@+id/marks_english_pa1"
+                            android:gravity="end"
+                            android:text="25/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_chemistry_pa1"
+                            android:text="Chemistry"/>
+                        <TextView
+                            android:id="@+id/marks_chemistry_pa1"
+                            android:gravity="end"
+                            android:text="16/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_drawing_pa1"
+                            android:text="Drawing"/>
+                        <TextView
+                            android:id="@+id/marks_drawing_pa1"
+                            android:gravity="end"
+                            android:text="38/50"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Periodic Assessment 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_sem1_pa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Periodic Assessment 2"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/subject_maths_pa2"
+                            android:text="Math" />
+
+                        <TextView
+                            android:id="@+id/marks_maths_pa2"
+                            android:gravity="end"
+                            android:text="20/40" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/subject_physics_pa2"
+                            android:text="Physics" />
+
+                        <TextView
+                            android:id="@+id/marks_physics_pa2"
+                            android:gravity="end"
+                            android:text="24/40" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/subject_cfit_pa2"
+                            android:text="Cfit" />
+
+                        <TextView
+                            android:id="@+id/marks_cfit_pa2"
+                            android:gravity="end"
+                            android:text="18/24" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/subject_english_pa2"
+                            android:text="English" />
+
+                        <TextView
+                            android:id="@+id/marks_english_pa2"
+                            android:gravity="end"
+                            android:text="36/40" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/subject_drawing_pa2"
+                            android:text="Drawing" />
+
+                        <TextView
+                            android:id="@+id/marks_drawing_pa2"
+                            android:gravity="end"
+                            android:text="25/50" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/subject_chemistry_pa2"
+                            android:text="Chemistry" />
+
+                        <TextView
+                            android:id="@+id/marks_chemistry_pa2"
+                            android:gravity="end"
+                            android:text="20/40" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Periodic Assessment 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_sem1_pa3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Periodic Assessment 3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_maths_pa3"
+                            android:text="Math"/>
+                        <TextView
+                            android:id="@+id/marks_maths_pa3"
+                            android:gravity="end"
+                            android:text="20/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_physics_pa3"
+                            android:text="Physics"/>
+                        <TextView
+                            android:id="@+id/marks_physics_pa3"
+                            android:gravity="end"
+                            android:text="24/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_cfit_pa3"
+                            android:text="Cfit"/>
+                        <TextView
+                            android:id="@+id/marks_cfit_pa3"
+                            android:gravity="end"
+                            android:text="18/24"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_english_pa3"
+                            android:text="English"/>
+                        <TextView
+                            android:id="@+id/marks_english_pa3"
+                            android:gravity="end"
+                            android:text="36/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_drawing_pa3"
+                            android:text="Drawing"/>
+                        <TextView
+                            android:id="@+id/marks_drawing_pa3"
+                            android:gravity="end"
+                            android:text="25/50"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_chemistry_pa3"
+                            android:text="Chemistry"/>
+                        <TextView
+                            android:id="@+id/marks_chemistry_pa3"
+                            android:gravity="end"
+                            android:text="20/40"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Theoretical Exams -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theoretical Exams"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <!-- Subject Rows -->
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_maths_theoretical"
+                            android:text="Math"/>
+                        <TextView
+                            android:id="@+id/marks_maths_theoretical"
+                            android:gravity="end"
+                            android:text="32/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_physics_theoretical"
+                            android:text="Physics"/>
+                        <TextView
+                            android:id="@+id/marks_physics_theoretical"
+                            android:gravity="end"
+                            android:text="40/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_cfit_theoretical"
+                            android:text="Cfit"/>
+                        <TextView
+                            android:id="@+id/marks_cfit_theoretical"
+                            android:gravity="end"
+                            android:text="20/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_english_theoretical"
+                            android:text="English"/>
+                        <TextView
+                            android:id="@+id/marks_english_theoretical"
+                            android:gravity="end"
+                            android:text="25/40"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_drawing_theoretical"
+                            android:text="Drawing"/>
+                        <TextView
+                            android:id="@+id/marks_drawing_theoretical"
+                            android:gravity="end"
+                            android:text="40/50"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subject_chemistry_theoretical"
+                            android:text="Chemistry"/>
+                        <TextView
+                            android:id="@+id/marks_chemistry_theoretical"
+                            android:gravity="end"
+                            android:text="35/40"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Practical Exams -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_practical_exams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_practical_exams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practical Exams"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/text_subject_english"
+                            android:text="English (P)"/>
+                        <TextView
+                            android:id="@+id/text_marks_english"
+                            android:gravity="end"
+                            android:text="22/25"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/text_subject_physics"
+                            android:text="Physics (P)"/>
+                        <TextView
+                            android:id="@+id/text_marks_physics"
+                            android:gravity="end"
+                            android:text="22/25"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/text_subject_chemistry"
+                            android:text="Chemistry (P)"/>
+                        <TextView
+                            android:id="@+id/text_marks_chemistry"
+                            android:gravity="end"
+                            android:text="19/25"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/text_subject_workshop"
+                            android:text="Workshop (P)"/>
+                        <TextView
+                            android:id="@+id/text_marks_workshop"
+                            android:gravity="end"
+                            android:text="60/75"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/text_subject_cfit"
+                            android:text="Cfit B (P)"/>
+                        <TextView
+                            android:id="@+id/text_marks_cfit"
+                            android:gravity="end"
+                            android:text="23/25"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Internal Assessment -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_internal_assessment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_internal_assessment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Internal Assessment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_internal_assessment_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: 323/400 = 80.8%"
+                    android:textSize="16sp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- External Assessment -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_external_assessment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_external_assessment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="External Assignment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_external_assessment_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: 742/1050 = 70.67%"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Attendance -->
+        <TextView
+            android:id="@+id/text_attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance: 92.75%"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="italic"/>
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

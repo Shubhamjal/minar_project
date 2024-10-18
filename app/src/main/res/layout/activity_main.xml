@@ -18,17 +18,10 @@
         app:defaultNavHost="true"
         android:layout_weight="1"
         />
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bottomNav"
         app:menu="@menu/bottomnavigation"
-        android:background="#9DE5ED"
         />
-
-
-
-
 </LinearLayout>

@@ -15,4 +15,14 @@
         android:name="com.example.collegeguide.Todo.TodoFragment"
         android:label="fragment_todo"
         tools:layout="@layout/fragment_todo" />
+    <fragment
+        android:id="@+id/academicRecordFragment"
+        android:name="com.example.collegeguide.AcademicRecord.AcademicFragment"
+        android:label="fragment_academic_record"
+        tools:layout="@layout/fragment_academic" />
+    <fragment
+        android:id="@+id/studyMaterialFragment"
+        android:name="com.example.collegeguide.StudyMaterial.StudyMaterialFragment"
+        android:label="fragment_study_material"
+        tools:layout="@layout/fragment_study_material" />
 </navigation>

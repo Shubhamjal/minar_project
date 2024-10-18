@@ -11,6 +11,16 @@
         android:title="Todo"
         android:icon="@drawable/baseline_done_all_24"/>
 
+    <item
+        android:id="@+id/Academics"
+        android:title="Academics"
+        android:icon="@drawable/baseline_assessment_24"/>
+
+    <item
+        android:id="@+id/Study_Material"
+        android:title="Study_Material"
+        android:icon="@drawable/baseline_notes_24"/>
+
 
 
 

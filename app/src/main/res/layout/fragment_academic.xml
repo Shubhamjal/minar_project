@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AcademicRecord.AcademicFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Academic Record"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- First Year CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- First Year Title -->
+                    <TextView
+                        android:id="@+id/tvFirstYearTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="First Year"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- Semester 1 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Semester 1 Title -->
+                            <TextView
+                                android:id="@+id/tvSemester1Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Semester 1"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Content for Semester 1 -->
+                            <TextView
+                                android:id="@+id/tvSemester1Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Periodic Assessment 1:\nPeriodic Assessment 2:\nPeriodic Assessment 3:\nInternal Assessment:\nExternal Assessment:" />
+
+                            <Button
+                                android:id="@+id/btnSemester1Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="View Details" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Semester 2 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Semester 2 Title -->
+                            <TextView
+                                android:id="@+id/tvSemester2Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Semester 2"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Content for Semester 2 -->
+                            <TextView
+                                android:id="@+id/tvSemester2Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Periodic Assessment 1:\nPeriodic Assessment 2:\nPeriodic Assessment 3:\nInternal Assessment:\nExternal Assessment:" />
+
+                            <Button
+                                android:id="@+id/btnSemester2Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="View Details" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Second Year CardView (with Semesters 3 and 4) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Second Year Title -->
+                    <TextView
+                        android:id="@+id/tvSecondYearTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Second Year"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- Semester 3 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Semester 3 Title -->
+                            <TextView
+                                android:id="@+id/tvSemester3Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Semester 3"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Content for Semester 3 -->
+                            <TextView
+                                android:id="@+id/tvSemester3Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Periodic Assessment 1:\nPeriodic Assessment 2:\nPeriodic Assessment 3:\nInternal Assessment:\nExternal Assessment:" />
+
+                            <Button
+                                android:id="@+id/btnSemester3Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="View Details" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Semester 4 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Semester 4 Title -->
+                            <TextView
+                                android:id="@+id/tvSemester4Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Semester 4"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Content for Semester 4 -->
+                            <TextView
+                                android:id="@+id/tvSemester4Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Periodic Assessment 1:\nPeriodic Assessment 2:\nPeriodic Assessment 3:\nInternal Assessment:\nExternal Assessment:" />
+
+                            <Button
+                                android:id="@+id/btnSemester4Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="View Details" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Third Year CardView (with Semesters 5 and 6) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Third Year Title -->
+                    <TextView
+                        android:id="@+id/tvThirdYearTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Third Year"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- Semester 5 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Semester 5 Title -->
+                            <TextView
+                                android:id="@+id/tvSemester5Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Semester 5"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Content for Semester 5 -->
+                            <TextView
+                                android:id="@+id/tvSemester5Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Periodic Assessment 1:\nPeriodic Assessment 2:\nPeriodic Assessment 3:\nInternal Assessment:\nExternal Assessment:" />
+
+                            <Button
+                                android:id="@+id/btnSemester5Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="View Details" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Semester 6 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Semester 6 Title -->
+                            <TextView
+                                android:id="@+id/tvSemester6Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Semester 6"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Content for Semester 6 -->
+                            <TextView
+                                android:id="@+id/tvSemester6Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="Periodic Assessment 1:\nPeriodic Assessment 2:\nPeriodic Assessment 3:\nInternal Assessment:\nExternal Assessment:" />
+
+                            <Button
+                                android:id="@+id/btnSemester6Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="View Details" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
