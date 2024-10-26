@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.collegeguide.R
 import com.example.collegeguide.databinding.FragmentStudyMaterialBinding
 
@@ -21,6 +22,8 @@ private const val ARG_PARAM2 = "param2"
 class StudyMaterialFragment : Fragment() {
 
     lateinit var binding: FragmentStudyMaterialBinding
+    private lateinit var pdfAdapter: PdfAdapter
+    private lateinit var pdfFiles: Array<String>
 
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -41,8 +44,35 @@ class StudyMaterialFragment : Fragment() {
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_study_material, container, false)
+
+        // Initialize RecyclerView
+        pdfFiles = getPdfFilesFromAssets()
+        pdfAdapter = PdfAdapter(pdfFiles) { selectedPdf ->
+            // Handle PDF click, open PdfViewerFragment or show PDF in a viewer
+            openPdfViewer(selectedPdf)
+        }
+        binding.pdfRecyclerView.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = pdfAdapter
+        }
+
+        return binding.root
+
     }
 
+    // Get PDF files from the assets folder
+    private fun getPdfFilesFromAssets(): Array<String> {
+        return context?.assets?.list("")?.filter { it.endsWith(".pdf") }?.toTypedArray() ?: arrayOf()
+    }
+
+    // Function to open PDF in a viewer fragment
+    private fun openPdfViewer(pdfFileName: String) {
+        val fragment = PdfViewerFragment.newInstance(pdfFileName)
+        fragmentManager?.beginTransaction()
+            ?.replace(R.id.fragment_container, fragment)
+            ?.addToBackStack(null)
+            ?.commit()
+    }
 
 
 

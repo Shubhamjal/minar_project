@@ -35,6 +35,9 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures.viewBinding=true    // binnding implemented
+
+
+
 }
 
 dependencies {
@@ -48,6 +51,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+    // PDF viewing library
+    implementation("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
+
+    implementation("androidx.pdf:pdf-viewer-fragment:1.0.0-alpha03")
 
 
     //Room Dependencies
